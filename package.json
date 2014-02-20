@@ -1,0 +1,23 @@
+{
+  "name": "co-nano",
+  "version": "0.0.0",
+  "description": "Exposes couchdb nano library API as thunks for use with co and koa.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/OlavHN/co-nano.git"
+  },
+  "keywords": [
+    "nano",
+    "couchdb",
+    "thunkify",
+    "co",
+    "koa"
+  ],
+  "author": "Olav Nymoen",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/OlavHN/co-nano/issues"
+  },
+  "homepage": "https://github.com/OlavHN/co-nano"
+}
