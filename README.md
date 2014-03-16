@@ -15,11 +15,12 @@ Usage: (Destructuring syntax not yet in V8 / node)
   
     co(function *() { // Or inside a koa handler
       yield coNano.db.create('myDb');
-     
+    
+      var db = coNano.use('myDb'); 
       // with destructuring: 
-      var [body, header] = yield coNano.use('myDb').insert({hello: 'world'});
+      var [body, headers] = yield db.insert({hello: 'world'}, 'myDocument');
       
       // without destructuring:
-      var res = yield coNano.use('myDb').insert({hello: 'world'});
-      var body = res[0];
+      var res = yield db.insert({hello: 'world'}, 'myDocument');
+      var body = res[0], headers = res[1];
     })();
