@@ -55,7 +55,7 @@ module.exports = function(nano) {
     use: function(db_name) { return thunker(db_methods, nano.use(db_name)) },
     request: thunkify(nano.request),
     auth: thunkify(nano.auth),
-    session: nano.session,
+    session: thunkify(nano.session),
     config: nano.config
   };
 

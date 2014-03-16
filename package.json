@@ -1,6 +1,6 @@
 {
   "name": "co-nano",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Exposes couchdb nano library API as thunks for use with co and koa.",
   "main": "index.js",
   "repository": {
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/OlavHN/co-nano/issues"
   },
-  "homepage": "https://github.com/OlavHN/co-nano"
+  "homepage": "https://github.com/OlavHN/co-nano",
+  "dependencies": {
+    "thunkify": "0.0.1"
+  }
 }
